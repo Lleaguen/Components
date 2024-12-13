@@ -34,7 +34,39 @@ Un componente reutilizable para manejar diferentes tipos de campos de entrada en
 
 ---
 
-### **2. `CustomForm`**
+
+### **2. `MultiFunctionalButton` **
+Un componente reutilizable de botón que admite varias funcionalidades, como navegar a una URL o ejecutar una función de onPress. Además, permite personalizar el icono, el tamaño, y el color del texto.
+
+## Propiedades
+| Propiedad       | Descripción                                                             | Tipo       | Valor Predeterminado  |
+|-----------------|-------------------------------------------------------------------------|------------|-----------------------|
+|`label`           |	Texto que se muestra en el botón.	                                    |`string`	   |    `undefined`        |
+|`onPress`         |	Función que se ejecuta cuando el botón es presionado.	                |`function`  |    `undefined`        |
+|`url`             |	URL que se abre al presionar el botón (si no se proporciona onPress).	|`string`	   |    `undefined`        |
+|`icon`            |	Nombre del icono de Ionicons que se muestra en el botón.	            |`string`	   |    `undefined`        |
+|`style`           |	Estilos adicionales para el botón.	                                  |`object`	   |    `undefined`        |
+|`textStyle`       |	Estilos adicionales para el texto dentro del botón.	                  |`object`	   |    `undefined`        |
+|`iconSize`        |	Tamaño del icono (opcional).	                                        |`number`	   |    `24`               |
+|`iconColor`       |	Color del icono (opcional).	                                          |`string`	   |    `#fff`             |
+|`Ejemplo`         | de Uso
+
+#### Ejemplo de Uso
+```javascript
+<MultiFunctionalButton
+  label="Go to Google"
+  url="https://www.google.com"
+  icon="logo-google"
+  iconSize={30}
+  iconColor="#4285F4"
+  style={{ marginTop: 20 }}
+  textStyle={{ fontSize: 18 }}
+/>
+
+```
+---
+
+### **3. `CustomForm`**
 Un componente reutilizable que permite crear formularios con cualquier cantidad de inputs y botones, configurados mediante props.
 
 #### Propiedades
@@ -62,7 +94,7 @@ Un componente reutilizable que permite crear formularios con cualquier cantidad 
 
 ---
 
-### **3. `Layout`**
+### **4. `Layout`**
 Un componente contenedor reutilizable que permite definir secciones como `header`, `main`, `aside`, `footer`, o cualquier tipo de `section`.
 
 #### Propiedades

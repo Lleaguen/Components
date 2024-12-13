@@ -58,31 +58,3 @@ const styles = StyleSheet.create({
 });
 
 export default MultiFunctionalButton;
-
-
-// ESPECIFICACIONES DE USO //
-
-// COMO BOTON NORMAL // 
-
-//<MultiFunctionalButton
-//  label="Click Me"
-//  onPress={() => console.log("Button Pressed")}
-// />
-
-// COMO BOTON CON ICONO  //
-
-//<MultiFunctionalButton
-//  label="Add to Cart"
-//  icon="cart-outline"
-//  onPress={() => console.log("Added to Cart")}
-// />
-
-// COMO BOTON DE ENLANCE //
-
-//<MultiFunctionalButton
-//  label="Open Google"
-//  url="https://www.google.com"
-// />
-
-
-

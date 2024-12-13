@@ -75,36 +75,3 @@ const styles = StyleSheet.create({
 export default CustomInput;
 
 
-// ESPECIFICACIONES DE USO //
-
-// INPUT DE TEXTO
-
-// <CustomInput
-//   label="Name"
-//   placeholder="Enter your name"
-//   value={name}
-//   onChangeText={setName}
-// />
- 
-// INPUT DE MAIL
-
-// <CustomInput
-//   label="Email"
-//   placeholder="Enter your email"
-//   value={email}
-//   onChangeText={setEmail}
-//   icon="mail-outline"
-//   keyboardType="email-address"
-//   error={!email.includes("@") ? "Invalid email address" : ""}
-// />
-
-// INPUT MAIL
-
-// <CustomInput
-//   label="Password"
-//   placeholder="Enter your password"
-//   value={password}
-//   onChangeText={setPassword}
-//   icon="lock-closed-outline"
-//   secureTextEntry
-// />
