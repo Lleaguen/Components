@@ -17,7 +17,7 @@ const CustomInput = ({
   placeholder,
   value,
   onChangeText,
-  type = "text", // Lista completa de tipos
+  type = "text", 
   icon,
   iconSize = 24,
   iconColor = "#0055FF",
