@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
-import CustomInput from "./CustomInput"; // Asegúrate de importar el componente previamente creado
+import CustomInput from "./CustomInput"; 
 
 const CustomForm = ({ title, inputs, buttons, onSubmit }) => {
   const handleInputChange = (field, value) => {
     if (onSubmit) {
-      onSubmit(field, value); // Reporta cambios al controlador externo
+      onSubmit(field, value); 
     }
   };
 
@@ -33,7 +33,7 @@ const CustomForm = ({ title, inputs, buttons, onSubmit }) => {
             key={index}
             title={button.title}
             onPress={button.onPress}
-            color={button.color || "#007BFF"} // Color predeterminado
+            color={button.color || "#007BFF"} 
           />
         ))}
       </View>
